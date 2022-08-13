@@ -3,9 +3,13 @@ package creational.builder;
 public class User {
 
     private final String firstName;
+
     private final String lastName;
+
     private final Integer age;
+
     private final String email;
+
     private final String address;
 
     private User(UserBuilder userBuilder) {
@@ -30,11 +34,17 @@ public class User {
     public static UserBuilder UserBuilder(String firstName, String lastName) {
         return new UserBuilder(firstName, lastName);
     }
+
     public static class UserBuilder {
+
         private String firstName;
+
         private String lastName;
+
         private Integer age;
+
         private String email;
+
         private String address;
 
         public UserBuilder(String firstName, String lastName) {
@@ -60,6 +70,7 @@ public class User {
         public User build() {
             return new User(this);
         }
+
     }
 
 }
