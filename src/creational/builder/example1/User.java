@@ -1,4 +1,4 @@
-package creational.builder;
+package creational.builder.example1;
 
 public class User {
 
